@@ -1,0 +1,824 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.container {
+  width: 100vw;
+  height: 90vh;
+  background-image: url(./assets/Rectangle\ 45.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 20rem;
+  width: 100vw;
+}
+
+.header img {
+  width: 10rem;
+}
+
+.header ul {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.header ul li a {
+  color: #ffff;
+  font-size: 1.5rem;
+  font-weight: 100;
+  transition: all 0.3s ease-in-out;
+}
+.header ul li a:hover {
+  color: #ffcf54;
+}
+.containerMain {
+  width: 100vw;
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  padding: 6rem 20rem;
+}
+.containerItem {
+  width: 100vw;
+}
+.containerMain h1 {
+  color: #e2c669;
+  font-size: 5.5rem;
+  font-weight: 500;
+}
+
+.containerMain p {
+  color: #ffff;
+  font-size: 1.5rem;
+}
+
+.form {
+  padding: 1rem 1.9rem;
+  width: 30rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  background-color: #242732;
+}
+
+.form .step {
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+}
+.form button {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #ffcf54;
+  transition: all 0.3s ease-in-out;
+}
+
+.form button:hover {
+  background-color: #fbb912;
+}
+
+.containerInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.containerInfo .containerItems {
+  display: flex;
+  gap: 3rem;
+  color: #ffff;
+  font-weight: 300;
+}
+.containerItem .reviews {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  
+}
+.containerItem .reviews p {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.containerItem .reviews .bi-star-fill {
+  color: #fbb912;
+  font-size: 1.2rem;
+}
+.containerInfo .experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  width: 15rem;
+  height: 18rem;
+  background-color: #242732;
+  border-bottom-right-radius: 3.8rem;
+}
+.containerInfo .experience span {
+  font-size: 1.3rem;
+}
+
+.containerInfo .project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  width: 15rem;
+  height: 18rem;
+  background-color: #242732;
+  border-bottom-right-radius: 3.8rem;
+}
+.containerInfo .project span {
+  font-size: 1.3rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 0 5%;
+}
+
+.social .bi {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.social .bi:hover {
+  opacity: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.section{
+    display: flex;
+    width: 100vw;
+    padding-top: 3% ;
+    border-bottom: 1px solid #808083;
+}
+.section img{
+    width: 80rem;
+    height: 45rem;
+}
+
+
+.section .content{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+    
+}
+.content{
+    max-width: 110rem;
+}
+
+.section .content h2{
+    text-align: right;
+    font-weight: 400;
+    font-size: 5rem;
+}
+
+.section .content p{
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    color: #242732;
+    text-align: center;
+}
+.section .content button{
+    padding: 1rem 2rem;
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+    border: none;
+    border-bottom-right-radius: 2.8rem;
+    background-color: #FFCF54;
+    cursor: pointer;
+
+}
+.section .content button:hover{
+    background-color: #fbb912;
+    transition: all .5s ease-in-out;
+
+}
+.section .content  a{
+    font-weight: 600;
+
+}
+
+.sectionServices{
+    display: flex;
+    padding: 2% 5%;
+    gap: 8rem;
+}
+.sectionServices h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.sectionServices p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.sectionServices img{
+    width: 30rem;
+    margin-bottom: 2rem;
+    border: 4px solid #AA7A00;
+}
+.sectionServices button{
+    padding: 1rem 2rem;
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+    border: none;
+    border-bottom-right-radius: 2.8rem;
+    background-color: #FFCF54;
+    cursor: pointer;
+}
+
+.sectionServices button:hover{
+    background-color: #fbb912;
+    transition: all .5s ease-in-out;
+
+}
+
+.containerCards{
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.projects{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242732;
+    
+}
+.projects .imgProjects{
+    
+    display: flex;
+    gap: 2rem;
+    flex-wrap: nowrap;
+}
+
+.imgProjects img{
+    width: 10vw;
+}
+
+.customerReviews{
+    max-width: 600px;
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+
+}
+
+.customerReviews h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+.customerReviews p{
+    font-size: 1.3rem;
+    text-align: right;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.customerReviews button{
+    padding: 1rem 2rem;
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+    border: none;
+    border-bottom-right-radius: 2.8rem;
+    background-color: #FFCF54;
+    cursor: pointer;
+}
+.customerReviews button a {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.customerReviews button:hover{
+    background-color: #fbb912;
+    transition: all .5s ease-in-out;
+}
+
+
+.sectionReviews{
+  width: 100%;
+  border-bottom: 1px solid #242732;
+  padding-bottom: 3rem;
+}
+.sectionReviews h2{
+  text-align: center;
+  font-size: 2.5rem;
+}
+.sectionReviews p{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.containerReviews{
+  gap: 3rem;
+  display: flex;
+  width: 400px;
+  
+  
+}
+.containerReviews .contentReviews{
+  display: flex;
+  align-items: center;
+  width: 400px;
+  gap: 1rem;
+  
+}
+.checkedReviews{
+  padding-bottom: 1.7rem;
+}
+.containerReviews .contentReviews span{
+  text-align: center;
+}
+.nameReviews .bi-star-fill{
+  color: #555171;
+}
+
+.checkedReviews .bi-shield-fill-check{
+  color: #17A589;
+}
+.location{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8rem;
+  padding: 2% 5%;
+}
+.containerLocation{
+  background-color: #242732;
+  max-width: 90rem;
+  padding: 2% 5%;
+  
+}
+.containerLocation h2{
+  color: #ffffff;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.containerLocation .locations{
+  display: flex;
+  font-size: 1.3rem;
+  gap: 1.5rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.location .reviews{
+  display: flex;
+
+}
+.location .reviews .bi-star-fill {
+  color: #fbb912;
+  font-size: 1.2rem;
+  margin-left: .8rem;
+  
+}
+.location .reviews p{
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+
+.footer{
+  background-color: #242732;
+  color: #ffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 10%;
+  
+}
+
+.containerFooter{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 500px;
+  border-bottom: 2px solid #808083;
+}
+
+.copy{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+
+
+@media(max-width:1000px){
+  .container{
+    height: 80vh;
+  }
+  .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 8rem;
+  width: 100vw;
+}
+
+.header img {
+  width: 8rem;
+}
+
+.header ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.header ul li a {
+  
+  font-size: 1.1rem;
+  font-weight: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.containerMain {
+  margin-top: 4rem;
+  padding: 2rem 8rem;
+  flex-direction: column-reverse;
+  align-items: center;
+  
+}
+
+
+.containerMain h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.containerMain p {
+
+  font-size: 1.2rem;
+}
+
+.containerItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 400px;
+}
+.containerInfo{
+  max-width: 400px;
+}
+.containerInfo .experience {
+
+  font-size: 2.5rem;
+  width: 13rem;
+  height: 16rem;
+ 
+  
+}
+.containerInfo .experience span {
+  font-size: 1rem;
+}
+
+.containerInfo .project {
+  
+  font-size: 2.5rem;
+  width: 13rem;
+  height: 16rem;
+  
+}
+.containerInfo .project span {
+  font-size: 1rem;
+}
+
+.section{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5% ;
+}
+.section img{
+  width: 50rem;
+  height: 25rem;
+  margin-bottom: 1.5rem;
+}
+
+.section .content h2{
+  text-align: center;
+  font-weight: 400;
+  font-size: 5rem;
+}
+
+.section .content p{
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  
+}
+
+.section .content{
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionServices{
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects{
+  flex-direction: column;
+  padding-top: 5rem;
+}
+.customerReviews{
+  align-items: center;
+  justify-content: center;
+}
+.footer{
+  flex-direction: column;
+  align-items: center;
+}
+.photo img{
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  width: 30rem;
+
+}
+.containerCards{
+  
+  gap: 2rem;
+  
+}
+.contentServices{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+}
+
+
+@media(max-width:400px){
+  .container{
+    height: 70vh;
+  }
+
+.header{
+  height: 10vh;
+  padding: 0 2%;
+  
+}
+.header img {
+  width: 3.5rem;
+}
+
+.header ul {
+  
+  gap: 1rem;
+  
+}
+
+.header ul li a {
+  
+  font-size: .8rem;
+  font-weight: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.containerItem .reviews p {
+  font-size: 1.2rem;
+  
+}
+.containerItem .reviews .bi-star-fill {
+  
+  font-size: .9rem;
+}
+
+.containerMain {
+  margin-top: 2rem;
+  padding: 2rem 4rem;
+  flex-direction: column-reverse;
+  align-items: center;
+  
+}
+
+
+.containerMain h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.containerMain p {
+
+  font-size: 1rem;
+}
+
+.containerItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 300px;
+}
+.social {
+  
+  gap: 2rem;
+  padding: 0 5%;
+}
+
+.social .bi {
+  font-size: 1.3rem;
+  
+}
+.containerInfo{
+  max-width: 300px;
+}
+.containerInfo .experience {
+
+  font-size: 2rem;
+  width: 11rem;
+  height: 14rem;
+ 
+  
+}
+.containerInfo .experience span {
+  font-size: 1rem;
+}
+
+.containerInfo .project {
+  
+  font-size: 2rem;
+  width: 11rem;
+  height: 14rem;
+  
+}
+.containerInfo .project span {
+  font-size: 1rem;
+}
+
+.section{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.section img{
+  width: 35rem;
+  height: 20rem;
+  margin-bottom: 1.5rem;
+}
+
+.section .content h2{
+  text-align: center;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.section .content p{
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  
+}
+
+.section .content{
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionServices{
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects{
+  flex-direction: column;
+  padding-top: 3rem;
+}
+.customerReviews{
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  padding: 1rem 1.4rem;
+  width: 25rem;
+  height: 15rem;
+  
+  
+}
+.projects{
+  flex-direction: column;
+  background-color: #242732;
+  
+}
+.projects .imgProjects{
+  flex-direction: column;
+  
+  
+}
+
+.imgProjects img{
+  width: 30vw;
+}
+.customerReviews h2{
+  font-size: 2rem;
+}
+.customerReviews p{
+  font-size: 1rem;
+  text-align: center;
+}
+.location{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:2rem 0;
+}
+
+.containerForm{
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .containerFooter{
+  padding: 2% 30%;
+}
+.containerCards{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+.contentServices{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+}
+
